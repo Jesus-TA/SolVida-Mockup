@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolVida - Inicio</title>
+    <style>
+        /* Reseteo de márgenes y relleno */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Configuración básica de la página */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Encabezado (Header) */
+        header {
+            background-color: #2e7d32; /* Verde ecológico oscuro */
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        /* Sección principal */
+        .content {
+            flex: 1;
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Estilos para las tarjetas de información */
+        .chart {
+            margin: 20px;
+            width: 300px;
+            height: 200px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .chart h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .chart:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Efecto al pasar el cursor */
+        }
+
+        /* Estilo del botón de mantenimiento */
+        .button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #43a047; /* Verde seguridad */
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+        }
+
+        .button:hover {
+            background-color: #1b5e20; /* Verde más oscuro para el hover */
+        }
+
+        /* Estilo del pie de página (Footer) */
+        footer {
+            background-color: #2e7d32; /* Verde ecológico oscuro */
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado (Header) -->
+    <header>
+        <h1>SolVida - Monitor de Energía Solar</h1>
+    </header>
+
+    <!-- Contenido principal -->
+    <div class="content">
+        <div class="chart">
+            <h2>Producción de Energía</h2>
+            <img src="img/panel-solar.jpg" alt="Paneles Solares">
+        </div>
+
+        <div class="chart">
+            <h2>Consumo de Energía</h2>
+            <img src="img/grafico-consumo.jpg" alt="Consumo de Energía">
+        </div>
+
+        <div class="chart">
+            <h2>Estado de las Baterías</h2>
+            <img src="img/estado-bateria.jpg" alt="Estado de las Baterías">
+        </div>
+
+        <!-- Botón de mantenimiento -->
+        <button class="button">Solicitar Mantenimiento</button>
+    </div>
+
+    <!-- Pie de página (Footer) -->
+    <footer>
+        <p>SolVida - Energía Solar para Comunidades Rurales</p>
+    </footer>
+</body>
+</html>
